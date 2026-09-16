@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from sqlalchemy import ARRAY, Float, ForeignKey, String, UniqueConstraint
+from sqlalchemy import ARRAY, Float, ForeignKey, Integer, String, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from database.datamodel import Base
@@ -71,6 +71,38 @@ class MetalBindingSite(Base):
             "z_coords": self.z_coords,
         }
 
+class ActiveSite(Base):
+    """A Tier 1+ active site: a point cloud around a derived anchor (not
+    necessarily a metal atom), together with the evidence tier and source
+    used to localize it.
+
+    Deliberately has no foreign keys into Entry/Assembly/Peptide: those
+    tables are populated by the existing metal-specific retrieval pipeline
+    (preprocessing.dataset), which Tier 1 sites bypass entirely, since they
+    come from downloaded structure files via preprocessing.active_site
+    instead. Identifying info (pdb_id, chain, assembly) is stored directly.
+    """
+
+    __tablename__ = "active_site"
+    __table_args__ = (
+        UniqueConstraint(
+            "pdb_id", "chain", "assembly", "source", name="unique_active_site"
+        ),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    pdb_id: Mapped[str]
+    chain: Mapped[str]
+    assembly: Mapped[int]
+    confidence_tier: Mapped[int]
+    source: Mapped[str]
+    mcsa_id: Mapped[int | None]
+    ec_numbers: Mapped[list[str]] = mapped_column(ARRAY(String))
+    residues_found: Mapped[list[int]] = mapped_column(ARRAY(Integer))
+    residues_missing: Mapped[list[int]] = mapped_column(ARRAY(Integer))
+    x_coords: Mapped[list[float]] = mapped_column(ARRAY(Float))
+    y_coords: Mapped[list[float]] = mapped_column(ARRAY(Float))
+    z_coords: Mapped[list[float]] = mapped_column(ARRAY(Float))
 
 class Assembly(Base):
     """Represents a biological assembly of a PDB entry.

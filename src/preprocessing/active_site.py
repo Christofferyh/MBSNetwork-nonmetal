@@ -44,6 +44,7 @@ class ActiveSitePointCloud:
     mcsa_id: int
     pdb_id: str
     chain: str
+    assembly: int
     ec_numbers: list[str]
     residues_found: list[int]
     residues_missing: list[int]
@@ -201,6 +202,7 @@ def build_active_site_point_cloud(
         mcsa_id=site.mcsa_id,
         pdb_id=site.pdb_id,
         chain=site.chain,
+        assembly=site.assembly,
         ec_numbers=site.ec_numbers,
         residues_found=found,
         residues_missing=missing,
