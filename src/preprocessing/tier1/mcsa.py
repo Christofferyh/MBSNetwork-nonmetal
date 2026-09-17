@@ -114,7 +114,7 @@ def extract_candidate_sites(entry: dict) -> list[MCSACandidateSite]:
             if pdb_id and chain_name and auth_resid is not None:
                 key = (pdb_id.lower(), chain_name)
                 sites_by_structure[key].add(auth_resid)
-                if assembly is not None:
+                if assembly:
                     assembly_by_structure[key] = assembly
 
     return [
