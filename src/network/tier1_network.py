@@ -14,6 +14,7 @@ from __future__ import annotations
 import logging
 
 import networkx as nx
+import numpy as np
 
 from alignment.alignment import PairwiseAligner
 from config import AlignmentConfig
