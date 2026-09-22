@@ -72,7 +72,7 @@ if __name__ == "__main__":
     import asyncio
 
     from preprocessing.active_site import build_active_site_point_cloud
-    from preprocessing.mcsa import retrieve_mcsa_candidates
+    from preprocessing.tier1.mcsa import retrieve_mcsa_candidates
 
     async def _main() -> None:
         candidates = await retrieve_mcsa_candidates(max_pages=1)

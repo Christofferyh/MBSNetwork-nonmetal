@@ -16,7 +16,7 @@ import logging
 
 from tqdm.asyncio import tqdm_asyncio
 
-from preprocessing.mcsa import MCSACandidateSite, retrieve_mcsa_candidates
+from preprocessing.tier1.mcsa import MCSACandidateSite, retrieve_mcsa_candidates
 from preprocessing.util import download_cif
 
 logger = logging.getLogger(__name__)
