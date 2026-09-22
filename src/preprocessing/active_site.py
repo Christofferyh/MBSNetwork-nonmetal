@@ -24,7 +24,7 @@ from Bio.PDB import FastMMCIFParser, Structure
 from Bio.PDB.MMCIF2Dict import MMCIF2Dict
 
 from config import config
-from preprocessing.mcsa import MCSACandidateSite
+from preprocessing.tier1.mcsa import MCSACandidateSite
 from preprocessing.structure import (
     get_atom_coordinates,
     get_non_protein_chains,

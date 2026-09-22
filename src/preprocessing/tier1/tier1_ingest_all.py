@@ -10,14 +10,14 @@ import asyncio
 import logging
 
 from preprocessing.active_site import build_active_site_point_cloud
-from preprocessing.mcsa import retrieve_mcsa_candidates
-from preprocessing.tier1_filters import (
+from preprocessing.tier1.mcsa import retrieve_mcsa_candidates
+from preprocessing.tier1.tier1_filters import (
     fetch_resolution,
     passes_atom_count_filter,
     passes_resolution_filter,
 )
-from preprocessing.tier1_pipeline import download_structures_for_candidates
-from preprocessing.tier1_store import store_active_site
+from preprocessing.tier1.tier1_pipeline import download_structures_for_candidates
+from preprocessing.tier1.tier1_store import store_active_site
 
 logger = logging.getLogger(__name__)
 
