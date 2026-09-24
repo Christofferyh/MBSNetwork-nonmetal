@@ -86,6 +86,13 @@ def read_network_json(name: str, root: Path = config.directory.networks) -> nx.G
                     attr = {}
                 if isinstance(attr, dict) and "rmsd" in attr:
                     graph.add_edge(u, v, rmsd=attr["rmsd"])
+                elif isinstance(attr, dict) and "weight" in attr:
+                    # build_network() (used by the Tier 1 pipeline) writes
+                    # the RMSD under the networkx-default "weight" key via
+                    # add_weighted_edges_from(), not "rmsd" -- normalize it
+                    # to "rmsd" here so callers have one consistent name
+                    # regardless of which network-building path wrote it.
+                    graph.add_edge(u, v, rmsd=attr["weight"])
                 else:
                     graph.add_edge(u, v)
 
