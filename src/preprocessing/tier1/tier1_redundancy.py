@@ -167,6 +167,16 @@ def compute_representatives(
     return RedundancyResult(site_to_representative=site_to_representative)
 
 
+def filter_alignments(alignments: np.ndarray, removed_sites: set[int]) -> np.ndarray:
+    """Drop every pair involving any of `removed_sites`, e.g. the sites
+    collapsed away by redundancy reduction."""
+    mask = ~(
+        np.isin(alignments[:, 0], list(removed_sites))
+        | np.isin(alignments[:, 1], list(removed_sites))
+    )
+    return alignments[mask]
+
+
 if __name__ == "__main__":
     with Session() as session:
         all_sites = session.execute(select(ActiveSite)).scalars().all()
@@ -191,3 +201,18 @@ if __name__ == "__main__":
         if len(reps_in_group) > 1:
             multi_rep_groups += 1
     print(f"Groups contributing more than one representative: {multi_rep_groups}")
+
+    removed_sites = {s for s in result.site_to_representative if s != result.site_to_representative[s]}
+    print(f"Removed site ids: {sorted(removed_sites)}")
+
+    filtered = filter_alignments(alignments, removed_sites)
+    n_reps = len(result.representatives)
+    expected_pairs = n_reps * (n_reps - 1) // 2
+    print()
+    print(f"Filtered alignment array: {len(filtered)} rows")
+    print(f"Expected pairs for {n_reps} representatives: {n_reps}*{n_reps - 1}/2 = {expected_pairs}")
+    print(f"Matches: {len(filtered) == expected_pairs}")
+
+    out_path = config.directory.alignments / "tier1_all_to_all_redundancy_reduced.npy"
+    np.save(out_path, filtered)
+    print(f"Saved {out_path}")
