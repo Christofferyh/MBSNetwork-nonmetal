@@ -1,0 +1,3272 @@
+{
+  "5": {
+    "pdb_id": "1nia",
+    "chain": "B",
+    "ec_numbers": [
+      "1.7.2.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 4
+  },
+  "348": {
+    "pdb_id": "1kq3",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 312
+  },
+  "6": {
+    "pdb_id": "1whs",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.16.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 5
+  },
+  "127": {
+    "pdb_id": "1w85",
+    "chain": "C",
+    "ec_numbers": [
+      "1.2.4.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 106
+  },
+  "159": {
+    "pdb_id": "1afr",
+    "chain": "A",
+    "ec_numbers": [
+      "1.14.19.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 136
+  },
+  "493": {
+    "pdb_id": "1cl1",
+    "chain": "A",
+    "ec_numbers": [
+      "4.4.1.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 449
+  },
+  "651": {
+    "pdb_id": "1guf",
+    "chain": "A",
+    "ec_numbers": [
+      "1.3.1.10"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 620
+  },
+  "952": {
+    "pdb_id": "1u1z",
+    "chain": "B",
+    "ec_numbers": [
+      "4.2.1.59"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 947
+  },
+  "7": {
+    "pdb_id": "1whs",
+    "chain": "B",
+    "ec_numbers": [
+      "3.4.16.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 5
+  },
+  "66": {
+    "pdb_id": "1qfe",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.10"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 54
+  },
+  "875": {
+    "pdb_id": "1mrq",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.112"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 858
+  },
+  "10": {
+    "pdb_id": "5icd",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.42"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 7
+  },
+  "103": {
+    "pdb_id": "1b93",
+    "chain": "C",
+    "ec_numbers": [
+      "4.2.3.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 85
+  },
+  "12": {
+    "pdb_id": "1bc2",
+    "chain": "A",
+    "ec_numbers": [
+      "3.5.2.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 16
+  },
+  "15": {
+    "pdb_id": "1sml",
+    "chain": "A",
+    "ec_numbers": [
+      "3.5.2.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 258
+  },
+  "188": {
+    "pdb_id": "1qh5",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.2.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 157
+  },
+  "19": {
+    "pdb_id": "1mkb",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.59"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 10
+  },
+  "953": {
+    "pdb_id": "1u1z",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.59"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 947
+  },
+  "20": {
+    "pdb_id": "1mkb",
+    "chain": "B",
+    "ec_numbers": [
+      "4.2.1.59"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 10
+  },
+  "266": {
+    "pdb_id": "1qrr",
+    "chain": "A",
+    "ec_numbers": [
+      "3.13.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 226
+  },
+  "597": {
+    "pdb_id": "1kqf",
+    "chain": "C",
+    "ec_numbers": [
+      "1.17.5.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 563
+  },
+  "636": {
+    "pdb_id": "1jm6",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.11.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 603
+  },
+  "749": {
+    "pdb_id": "1yon",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.169"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 721
+  },
+  "896": {
+    "pdb_id": "1pud",
+    "chain": "A",
+    "ec_numbers": [
+      "2.4.2.29"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 881
+  },
+  "22": {
+    "pdb_id": "1vnc",
+    "chain": "A",
+    "ec_numbers": [
+      "1.11.1.10"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 14
+  },
+  "415": {
+    "pdb_id": "1qi9",
+    "chain": "A",
+    "ec_numbers": [
+      "1.11.1.18"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 373
+  },
+  "24": {
+    "pdb_id": "1jdw",
+    "chain": "A",
+    "ec_numbers": [
+      "2.1.4.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 18
+  },
+  "667": {
+    "pdb_id": "1i1i",
+    "chain": "P",
+    "ec_numbers": [
+      "3.4.24.16"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 638
+  },
+  "25": {
+    "pdb_id": "1dl2",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.113"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 19
+  },
+  "26": {
+    "pdb_id": "1x9d",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.113"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 19
+  },
+  "27": {
+    "pdb_id": "1qjd",
+    "chain": "A",
+    "ec_numbers": [
+      "1.3.5.4"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 20
+  },
+  "332": {
+    "pdb_id": "1yq4",
+    "chain": "A",
+    "ec_numbers": [
+      "1.3.5.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 294
+  },
+  "769": {
+    "pdb_id": "1knp",
+    "chain": "A",
+    "ec_numbers": [
+      "1.4.3.16"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 739
+  },
+  "34": {
+    "pdb_id": "1ah7",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.4.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 27
+  },
+  "437": {
+    "pdb_id": "1ak0",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.30.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 395
+  },
+  "745": {
+    "pdb_id": "1im5",
+    "chain": "A",
+    "ec_numbers": [
+      "3.5.1.19"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 716
+  },
+  "35": {
+    "pdb_id": "1djx",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.4.11"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 28
+  },
+  "64": {
+    "pdb_id": "1d8c",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.3.9"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 53
+  },
+  "115": {
+    "pdb_id": "1fui",
+    "chain": "A",
+    "ec_numbers": [
+      "5.3.1.25"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 95
+  },
+  "202": {
+    "pdb_id": "1m4l",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.17.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 171
+  },
+  "336": {
+    "pdb_id": "2pz0",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.4.46"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 300
+  },
+  "37": {
+    "pdb_id": "1djo",
+    "chain": "A",
+    "ec_numbers": [
+      "3.5.1.38"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 29
+  },
+  "498": {
+    "pdb_id": "3eca",
+    "chain": "A",
+    "ec_numbers": [
+      "3.5.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 455
+  },
+  "40": {
+    "pdb_id": "1qin",
+    "chain": "B",
+    "ec_numbers": [
+      "4.4.1.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 32
+  },
+  "41": {
+    "pdb_id": "1qin",
+    "chain": "A",
+    "ec_numbers": [
+      "4.4.1.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 32
+  },
+  "398": {
+    "pdb_id": "1f9z",
+    "chain": "A",
+    "ec_numbers": [
+      "4.4.1.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 359
+  },
+  "881": {
+    "pdb_id": "1oac",
+    "chain": "A",
+    "ec_numbers": [
+      "1.4.3.21"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 864
+  },
+  "261": {
+    "pdb_id": "2qut",
+    "chain": "A",
+    "ec_numbers": [
+      "4.1.2.13"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 222
+  },
+  "863": {
+    "pdb_id": "1dxe",
+    "chain": "A",
+    "ec_numbers": [
+      "4.1.2.20"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 846
+  },
+  "42": {
+    "pdb_id": "1jc5",
+    "chain": "A",
+    "ec_numbers": [
+      "5.1.99.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 33
+  },
+  "619": {
+    "pdb_id": "1lbu",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.17.14"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 585
+  },
+  "43": {
+    "pdb_id": "1mpy",
+    "chain": "A",
+    "ec_numbers": [
+      "1.13.11.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 34
+  },
+  "472": {
+    "pdb_id": "1bs0",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.47"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 430
+  },
+  "44": {
+    "pdb_id": "2phk",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.11.19"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 35
+  },
+  "285": {
+    "pdb_id": "1ir3",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.10.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 246
+  },
+  "784": {
+    "pdb_id": "1zrz",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.11.13"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 756
+  },
+  "51": {
+    "pdb_id": "4kbp",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 43
+  },
+  "674": {
+    "pdb_id": "1gt7",
+    "chain": "A",
+    "ec_numbers": [
+      "4.1.2.19"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 645
+  },
+  "53": {
+    "pdb_id": "1cdg",
+    "chain": "A",
+    "ec_numbers": [
+      "2.4.1.19"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 45
+  },
+  "322": {
+    "pdb_id": "1uok",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.10"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 285
+  },
+  "439": {
+    "pdb_id": "1amy",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 397
+  },
+  "917": {
+    "pdb_id": "1qho",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.133"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 905
+  },
+  "55": {
+    "pdb_id": "1ytw",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.48"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 47
+  },
+  "500": {
+    "pdb_id": "1d5r",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.16"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 456
+  },
+  "58": {
+    "pdb_id": "1pya",
+    "chain": "A",
+    "ec_numbers": [
+      "4.1.1.22"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 49
+  },
+  "147": {
+    "pdb_id": "1v54",
+    "chain": "A",
+    "ec_numbers": [
+      "1.9.3.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 124
+  },
+  "551": {
+    "pdb_id": "1e2a",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.1.191"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 514
+  },
+  "558": {
+    "pdb_id": "1ebf",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 521
+  },
+  "678": {
+    "pdb_id": "1kny",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.7.-"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 647
+  },
+  "65": {
+    "pdb_id": "1n8i",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.3.9"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 53
+  },
+  "69": {
+    "pdb_id": "2ahj",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.84"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 57
+  },
+  "320": {
+    "pdb_id": "2dd5",
+    "chain": "C",
+    "ec_numbers": [
+      "3.5.5.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 284
+  },
+  "76": {
+    "pdb_id": "1bjp",
+    "chain": "B",
+    "ec_numbers": [
+      "5.3.2.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 61
+  },
+  "553": {
+    "pdb_id": "1qrg",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 516
+  },
+  "86": {
+    "pdb_id": "1lxa",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.129"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 69
+  },
+  "235": {
+    "pdb_id": "1dpx",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.17"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 203
+  },
+  "333": {
+    "pdb_id": "1n1d",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.7.39"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 296
+  },
+  "804": {
+    "pdb_id": "1ei5",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.11.19"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 782
+  },
+  "809": {
+    "pdb_id": "1t0u",
+    "chain": "A",
+    "ec_numbers": [
+      "2.4.2.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 787
+  },
+  "100": {
+    "pdb_id": "1l8s",
+    "chain": "B",
+    "ec_numbers": [
+      "3.1.1.4"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 83
+  },
+  "625": {
+    "pdb_id": "1hfs",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.24.17"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 591
+  },
+  "717": {
+    "pdb_id": "1roz",
+    "chain": "A",
+    "ec_numbers": [
+      "2.5.1.46"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 687
+  },
+  "904": {
+    "pdb_id": "2pgd",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.44"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 889
+  },
+  "969": {
+    "pdb_id": "1g2i",
+    "chain": "C",
+    "ec_numbers": [
+      "3.4.22.-"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 964
+  },
+  "110": {
+    "pdb_id": "1brw",
+    "chain": "A",
+    "ec_numbers": [
+      "2.4.2.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 91
+  },
+  "844": {
+    "pdb_id": "1ahb",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.2.22"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 825
+  },
+  "117": {
+    "pdb_id": "1ctt",
+    "chain": "A",
+    "ec_numbers": [
+      "3.5.4.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 97
+  },
+  "665": {
+    "pdb_id": "1uaq",
+    "chain": "A",
+    "ec_numbers": [
+      "3.5.4.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 636
+  },
+  "123": {
+    "pdb_id": "1vao",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.3.38"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 103
+  },
+  "548": {
+    "pdb_id": "1bix",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.99.18"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 510
+  },
+  "131": {
+    "pdb_id": "1c0p",
+    "chain": "A",
+    "ec_numbers": [
+      "1.4.3.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 110
+  },
+  "237": {
+    "pdb_id": "1o08",
+    "chain": "A",
+    "ec_numbers": [
+      "5.4.2.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 206
+  },
+  "132": {
+    "pdb_id": "1ofd",
+    "chain": "A",
+    "ec_numbers": [
+      "1.4.7.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 111
+  },
+  "373": {
+    "pdb_id": "2hdh",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.35"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 336
+  },
+  "139": {
+    "pdb_id": "1amo",
+    "chain": "A",
+    "ec_numbers": [
+      "1.6.2.4"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 117
+  },
+  "546": {
+    "pdb_id": "1fnb",
+    "chain": "A",
+    "ec_numbers": [
+      "1.18.1.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 506
+  },
+  "146": {
+    "pdb_id": "1jnr",
+    "chain": "B",
+    "ec_numbers": [
+      "1.8.99.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 123
+  },
+  "799": {
+    "pdb_id": "1tox",
+    "chain": "B",
+    "ec_numbers": [
+      "2.4.2.36"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 773
+  },
+  "216": {
+    "pdb_id": "1dnp",
+    "chain": "A",
+    "ec_numbers": [
+      "4.1.99.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 183
+  },
+  "364": {
+    "pdb_id": "1i58",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.-.-"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 327
+  },
+  "149": {
+    "pdb_id": "2frv",
+    "chain": "D",
+    "ec_numbers": [
+      "1.12.2.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 126
+  },
+  "486": {
+    "pdb_id": "1cc1",
+    "chain": "L",
+    "ec_numbers": [
+      "1.12.99.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 443
+  },
+  "151": {
+    "pdb_id": "1os7",
+    "chain": "B",
+    "ec_numbers": [
+      "1.14.11.17"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 129
+  },
+  "715": {
+    "pdb_id": "1gp5",
+    "chain": "A",
+    "ec_numbers": [
+      "1.14.20.4"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 685
+  },
+  "152": {
+    "pdb_id": "1ndo",
+    "chain": "A",
+    "ec_numbers": [
+      "1.14.12.12"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 130
+  },
+  "428": {
+    "pdb_id": "1yph",
+    "chain": "C",
+    "ec_numbers": [
+      "3.4.21.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 387
+  },
+  "157": {
+    "pdb_id": "2toh",
+    "chain": "A",
+    "ec_numbers": [
+      "1.14.16.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 134
+  },
+  "626": {
+    "pdb_id": "1evy",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 593
+  },
+  "656": {
+    "pdb_id": "1epw",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.24.69"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 626
+  },
+  "161": {
+    "pdb_id": "2jcw",
+    "chain": "A",
+    "ec_numbers": [
+      "1.15.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 138
+  },
+  "513": {
+    "pdb_id": "1gz6",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.-"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 470
+  },
+  "163": {
+    "pdb_id": "1l1l",
+    "chain": "A",
+    "ec_numbers": [
+      "1.17.4.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 140
+  },
+  "307": {
+    "pdb_id": "1bmt",
+    "chain": "A",
+    "ec_numbers": [
+      "2.1.1.13"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 268
+  },
+  "391": {
+    "pdb_id": "3pmg",
+    "chain": "B",
+    "ec_numbers": [
+      "5.4.2.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 352
+  },
+  "167": {
+    "pdb_id": "1ljl",
+    "chain": "A",
+    "ec_numbers": [
+      "1.20.4.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 143
+  },
+  "179": {
+    "pdb_id": "1f80",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.8.7"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 152
+  },
+  "633": {
+    "pdb_id": "1mhl",
+    "chain": "B",
+    "ec_numbers": [
+      "1.11.2.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 601
+  },
+  "183": {
+    "pdb_id": "1t4c",
+    "chain": "A",
+    "ec_numbers": [
+      "2.8.3.16"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 155
+  },
+  "566": {
+    "pdb_id": "1xvt",
+    "chain": "A",
+    "ec_numbers": [
+      "2.8.3.21"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 531
+  },
+  "189": {
+    "pdb_id": "1auk",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.6.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 158
+  },
+  "958": {
+    "pdb_id": "4mhx",
+    "chain": "A",
+    "ec_numbers": [
+      "3.10.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 951
+  },
+  "191": {
+    "pdb_id": "1ako",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.11.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 160
+  },
+  "198": {
+    "pdb_id": "1lok",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.11.10"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 167
+  },
+  "491": {
+    "pdb_id": "1cg2",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.17.11"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 447
+  },
+  "200": {
+    "pdb_id": "1pfq",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.14.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 169
+  },
+  "455": {
+    "pdb_id": "1azw",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.11.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 412
+  },
+  "510": {
+    "pdb_id": "1cv2",
+    "chain": "A",
+    "ec_numbers": [
+      "3.8.1.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 467
+  },
+  "555": {
+    "pdb_id": "1r4z",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.1.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 518
+  },
+  "560": {
+    "pdb_id": "1pja",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.2.22"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 523
+  },
+  "695": {
+    "pdb_id": "1mpx",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.1.43"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 666
+  },
+  "203": {
+    "pdb_id": "1onw",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.19.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 172
+  },
+  "660": {
+    "pdb_id": "1j79",
+    "chain": "A",
+    "ec_numbers": [
+      "3.5.2.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 630
+  },
+  "204": {
+    "pdb_id": "1pq5",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.21.4"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 173
+  },
+  "429": {
+    "pdb_id": "1yph",
+    "chain": "E",
+    "ec_numbers": [
+      "3.4.21.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 387
+  },
+  "762": {
+    "pdb_id": "1zoi",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.1.-"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 733
+  },
+  "205": {
+    "pdb_id": "9pap",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 174
+  },
+  "630": {
+    "pdb_id": "1uch",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.19.12"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 597
+  },
+  "654": {
+    "pdb_id": "1gcb",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.40"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 624
+  },
+  "709": {
+    "pdb_id": "1nln",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.39"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 679
+  },
+  "826": {
+    "pdb_id": "1x9y",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.28"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 805
+  },
+  "834": {
+    "pdb_id": "1glo",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.27"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 814
+  },
+  "960": {
+    "pdb_id": "1deu",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.18.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 953
+  },
+  "950": {
+    "pdb_id": "3fnl",
+    "chain": "A",
+    "ec_numbers": [
+      "1.11.1.7"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 944
+  },
+  "218": {
+    "pdb_id": "1pwh",
+    "chain": "A",
+    "ec_numbers": [
+      "4.3.1.17"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 186
+  },
+  "882": {
+    "pdb_id": "1oas",
+    "chain": "A",
+    "ec_numbers": [
+      "2.5.1.47"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 865
+  },
+  "219": {
+    "pdb_id": "1mns",
+    "chain": "A",
+    "ec_numbers": [
+      "5.1.2.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 187
+  },
+  "526": {
+    "pdb_id": "4hpn",
+    "chain": "A",
+    "ec_numbers": [
+      "5.5.1.27"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 483
+  },
+  "964": {
+    "pdb_id": "3dg6",
+    "chain": "A",
+    "ec_numbers": [
+      "5.5.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 959
+  },
+  "966": {
+    "pdb_id": "2hxt",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.68"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 961
+  },
+  "220": {
+    "pdb_id": "1xel",
+    "chain": "A",
+    "ec_numbers": [
+      "5.1.3.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 188
+  },
+  "295": {
+    "pdb_id": "1mg5",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 255
+  },
+  "639": {
+    "pdb_id": "1qsg",
+    "chain": "A",
+    "ec_numbers": [
+      "1.3.1.9"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 606
+  },
+  "761": {
+    "pdb_id": "1xs1",
+    "chain": "C",
+    "ec_numbers": [
+      "3.5.4.13"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 732
+  },
+  "223": {
+    "pdb_id": "1z9h",
+    "chain": "A",
+    "ec_numbers": [
+      "5.3.99.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 192
+  },
+  "459": {
+    "pdb_id": "1b8f",
+    "chain": "A",
+    "ec_numbers": [
+      "4.3.1.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 417
+  },
+  "957": {
+    "pdb_id": "3mak",
+    "chain": "A",
+    "ec_numbers": [
+      "4.5.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 950
+  },
+  "224": {
+    "pdb_id": "1f2v",
+    "chain": "A",
+    "ec_numbers": [
+      "5.4.99.61"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 193
+  },
+  "734": {
+    "pdb_id": "1c4t",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.61"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 704
+  },
+  "226": {
+    "pdb_id": "2gsa",
+    "chain": "A",
+    "ec_numbers": [
+      "5.4.3.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 195
+  },
+  "870": {
+    "pdb_id": "1ohv",
+    "chain": "A",
+    "ec_numbers": [
+      "2.6.1.19"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 854
+  },
+  "937": {
+    "pdb_id": "2oat",
+    "chain": "A",
+    "ec_numbers": [
+      "2.6.1.13"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 929
+  },
+  "231": {
+    "pdb_id": "1kqp",
+    "chain": "A",
+    "ec_numbers": [
+      "6.3.1.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 200
+  },
+  "269": {
+    "pdb_id": "2a84",
+    "chain": "A",
+    "ec_numbers": [
+      "6.3.2.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 229
+  },
+  "520": {
+    "pdb_id": "1cqq",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.28"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 477
+  },
+  "529": {
+    "pdb_id": "2qmx",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.51"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 485
+  },
+  "243": {
+    "pdb_id": "1n2c",
+    "chain": "B",
+    "ec_numbers": [
+      "1.18.6.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 212
+  },
+  "265": {
+    "pdb_id": "1vr7",
+    "chain": "B",
+    "ec_numbers": [
+      "4.1.1.50"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 225
+  },
+  "267": {
+    "pdb_id": "1e6u",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.271"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 227
+  },
+  "906": {
+    "pdb_id": "1ybv",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.252"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 891
+  },
+  "268": {
+    "pdb_id": "1bxk",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.46"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 228
+  },
+  "270": {
+    "pdb_id": "1gzg",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.24"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 230
+  },
+  "700": {
+    "pdb_id": "1fo6",
+    "chain": "A",
+    "ec_numbers": [
+      "3.5.1.77"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 671
+  },
+  "284": {
+    "pdb_id": "2rjr",
+    "chain": "A",
+    "ec_numbers": [
+      "5.4.3.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 245
+  },
+  "572": {
+    "pdb_id": "2bvc",
+    "chain": "A",
+    "ec_numbers": [
+      "6.3.1.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 537
+  },
+  "287": {
+    "pdb_id": "1a8q",
+    "chain": "A",
+    "ec_numbers": [
+      "1.11.1.10"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 248
+  },
+  "288": {
+    "pdb_id": "1a7u",
+    "chain": "A",
+    "ec_numbers": [
+      "1.11.1.10"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 248
+  },
+  "457": {
+    "pdb_id": "1b6g",
+    "chain": "A",
+    "ec_numbers": [
+      "3.8.1.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 415
+  },
+  "797": {
+    "pdb_id": "1uk7",
+    "chain": "A",
+    "ec_numbers": [
+      "3.7.1.9"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 771
+  },
+  "534": {
+    "pdb_id": "1dhr",
+    "chain": "A",
+    "ec_numbers": [
+      "1.5.1.34"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 491
+  },
+  "308": {
+    "pdb_id": "3dgb",
+    "chain": "A",
+    "ec_numbers": [
+      "5.5.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 269
+  },
+  "387": {
+    "pdb_id": "2chr",
+    "chain": "A",
+    "ec_numbers": [
+      "5.5.1.7"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 348
+  },
+  "316": {
+    "pdb_id": "1sur",
+    "chain": "A",
+    "ec_numbers": [
+      "1.8.4.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 279
+  },
+  "591": {
+    "pdb_id": "1d2t",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 558
+  },
+  "331": {
+    "pdb_id": "1dd8",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.41"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 292
+  },
+  "608": {
+    "pdb_id": "1kas",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.179"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 574
+  },
+  "352": {
+    "pdb_id": "1ey3",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.17"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 315
+  },
+  "380": {
+    "pdb_id": "1hzd",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.18"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 343
+  },
+  "385": {
+    "pdb_id": "2vss",
+    "chain": "A",
+    "ec_numbers": [
+      "4.-.-.-"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 347
+  },
+  "356": {
+    "pdb_id": "1oya",
+    "chain": "A",
+    "ec_numbers": [
+      "1.6.99.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 319
+  },
+  "726": {
+    "pdb_id": "2hsa",
+    "chain": "A",
+    "ec_numbers": [
+      "1.3.1.42"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 697
+  },
+  "383": {
+    "pdb_id": "1q51",
+    "chain": "D",
+    "ec_numbers": [
+      "4.1.3.36"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 346
+  },
+  "374": {
+    "pdb_id": "1chd",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.1.61"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 337
+  },
+  "381": {
+    "pdb_id": "2gtr",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.48"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 344
+  },
+  "540": {
+    "pdb_id": "1pjh",
+    "chain": "A",
+    "ec_numbers": [
+      "5.3.3.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 499
+  },
+  "386": {
+    "pdb_id": "2vss",
+    "chain": "B",
+    "ec_numbers": [
+      "4.-.-.-"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 347
+  },
+  "629": {
+    "pdb_id": "1eb6",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.24.39"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 596
+  },
+  "962": {
+    "pdb_id": "1tkk",
+    "chain": "A",
+    "ec_numbers": [
+      "5.1.1.20"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 957
+  },
+  "423": {
+    "pdb_id": "1nlu",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.21.100"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 380
+  },
+  "751": {
+    "pdb_id": "1s01",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.21.62"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 723
+  },
+  "522": {
+    "pdb_id": "1cwy",
+    "chain": "A",
+    "ec_numbers": [
+      "2.4.1.25"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 479
+  },
+  "441": {
+    "pdb_id": "1apx",
+    "chain": "A",
+    "ec_numbers": [
+      "1.11.1.11"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 399
+  },
+  "739": {
+    "pdb_id": "1dj1",
+    "chain": "A",
+    "ec_numbers": [
+      "1.11.1.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 709
+  },
+  "442": {
+    "pdb_id": "1aq0",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.73"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 400
+  },
+  "614": {
+    "pdb_id": "1ghs",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.39"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 580
+  },
+  "443": {
+    "pdb_id": "1aql",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.1.13"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 401
+  },
+  "473": {
+    "pdb_id": "1bs9",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.1.72"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 431
+  },
+  "557": {
+    "pdb_id": "1thg",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.1.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 520
+  },
+  "559": {
+    "pdb_id": "1eh5",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.2.22"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 522
+  },
+  "913": {
+    "pdb_id": "1qfm",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.21.26"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 901
+  },
+  "445": {
+    "pdb_id": "1ast",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.24.21"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 403
+  },
+  "653": {
+    "pdb_id": "1r1j",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.24.11"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 623
+  },
+  "670": {
+    "pdb_id": "1pwv",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.24.83"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 641
+  },
+  "697": {
+    "pdb_id": "1lml",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.24.36"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 668
+  },
+  "808": {
+    "pdb_id": "1ge7",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.24.20"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 786
+  },
+  "446": {
+    "pdb_id": "1at1",
+    "chain": "A",
+    "ec_numbers": [
+      "2.1.3.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 405
+  },
+  "567": {
+    "pdb_id": "1rhc",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.98.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 532
+  },
+  "447": {
+    "pdb_id": "1aui",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.16"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 406
+  },
+  "515": {
+    "pdb_id": "1s95",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.16"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 472
+  },
+  "448": {
+    "pdb_id": "1auw",
+    "chain": "A",
+    "ec_numbers": [
+      "4.3.2.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 408
+  },
+  "449": {
+    "pdb_id": "1auw",
+    "chain": "C",
+    "ec_numbers": [
+      "4.3.2.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 408
+  },
+  "603": {
+    "pdb_id": "1fuq",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 569
+  },
+  "452": {
+    "pdb_id": "1ax4",
+    "chain": "B",
+    "ec_numbers": [
+      "4.1.99.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 410
+  },
+  "941": {
+    "pdb_id": "2tpl",
+    "chain": "B",
+    "ec_numbers": [
+      "4.1.99.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 933
+  },
+  "454": {
+    "pdb_id": "1ay4",
+    "chain": "A",
+    "ec_numbers": [
+      "2.6.1.57"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 411
+  },
+  "460": {
+    "pdb_id": "1b8g",
+    "chain": "A",
+    "ec_numbers": [
+      "4.4.1.14"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 418
+  },
+  "828": {
+    "pdb_id": "1k32",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.21.-"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 808
+  },
+  "466": {
+    "pdb_id": "1bjo",
+    "chain": "A",
+    "ec_numbers": [
+      "2.6.1.52"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 424
+  },
+  "461": {
+    "pdb_id": "1b9h",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.144"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 419
+  },
+  "552": {
+    "pdb_id": "1e2t",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.118"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 515
+  },
+  "839": {
+    "pdb_id": "2bkr",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.68"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 820
+  },
+  "467": {
+    "pdb_id": "1qrz",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.21.7"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 425
+  },
+  "642": {
+    "pdb_id": "1ssx",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.21.12"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 609
+  },
+  "801": {
+    "pdb_id": "1rgq",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.21.98"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 776
+  },
+  "819": {
+    "pdb_id": "1rtf",
+    "chain": "B",
+    "ec_numbers": [
+      "3.4.21.68"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 798
+  },
+  "470": {
+    "pdb_id": "1bqc",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.78"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 428
+  },
+  "485": {
+    "pdb_id": "1cbg",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.21"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 442
+  },
+  "544": {
+    "pdb_id": "1qhf",
+    "chain": "A",
+    "ec_numbers": [
+      "5.4.2.11"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 504
+  },
+  "475": {
+    "pdb_id": "1bvz",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.135"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 433
+  },
+  "477": {
+    "pdb_id": "1bxr",
+    "chain": "D",
+    "ec_numbers": [
+      "6.3.5.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 435
+  },
+  "775": {
+    "pdb_id": "1l9x",
+    "chain": "B",
+    "ec_numbers": [
+      "3.4.19.9"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 747
+  },
+  "482": {
+    "pdb_id": "1c82",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.2.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 439
+  },
+  "484": {
+    "pdb_id": "1cb8",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.2.5"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 441
+  },
+  "503": {
+    "pdb_id": "1myr",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.147"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 460
+  },
+  "688": {
+    "pdb_id": "1fhl",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.89"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 658
+  },
+  "696": {
+    "pdb_id": "1pz3",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.55"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 667
+  },
+  "850": {
+    "pdb_id": "1cz1",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.58"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 831
+  },
+  "488": {
+    "pdb_id": "1cel",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.91"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 444
+  },
+  "845": {
+    "pdb_id": "1un1",
+    "chain": "B",
+    "ec_numbers": [
+      "2.4.1.207"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 826
+  },
+  "495": {
+    "pdb_id": "1ec9",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.40"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 451
+  },
+  "497": {
+    "pdb_id": "1rpt",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 454
+  },
+  "892": {
+    "pdb_id": "1pbg",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.85"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 877
+  },
+  "504": {
+    "pdb_id": "1s9c",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.119"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 461
+  },
+  "505": {
+    "pdb_id": "1pnt",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.48"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 462
+  },
+  "512": {
+    "pdb_id": "1bzc",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.48"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 469
+  },
+  "506": {
+    "pdb_id": "2dw7",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.81"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 463
+  },
+  "519": {
+    "pdb_id": "1cns",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.14"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 475
+  },
+  "836": {
+    "pdb_id": "1nw9",
+    "chain": "B",
+    "ec_numbers": [
+      "3.4.22.62"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 816
+  },
+  "641": {
+    "pdb_id": "1ds2",
+    "chain": "E",
+    "ec_numbers": [
+      "3.4.21.81"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 608
+  },
+  "791": {
+    "pdb_id": "2bhg",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.28"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 763
+  },
+  "521": {
+    "pdb_id": "1ctn",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.14"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 478
+  },
+  "837": {
+    "pdb_id": "1itx",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.14"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 817
+  },
+  "523": {
+    "pdb_id": "1czf",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.15"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 480
+  },
+  "624": {
+    "pdb_id": "1idj",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.2.10"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 590
+  },
+  "967": {
+    "pdb_id": "3d47",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.90"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 962
+  },
+  "543": {
+    "pdb_id": "4jn7",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.158"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 503
+  },
+  "550": {
+    "pdb_id": "1gpr",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.1.191"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 513
+  },
+  "689": {
+    "pdb_id": "1do6",
+    "chain": "A",
+    "ec_numbers": [
+      "1.15.1.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 660
+  },
+  "556": {
+    "pdb_id": "1tah",
+    "chain": "B",
+    "ec_numbers": [
+      "3.1.1.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 519
+  },
+  "939": {
+    "pdb_id": "2tdt",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.117"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 932
+  },
+  "563": {
+    "pdb_id": "4mdh",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.37"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 526
+  },
+  "564": {
+    "pdb_id": "1emd",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.37"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 527
+  },
+  "702": {
+    "pdb_id": "1kdg",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.99.18"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 673
+  },
+  "571": {
+    "pdb_id": "2bvc",
+    "chain": "F",
+    "ec_numbers": [
+      "6.3.1.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 537
+  },
+  "580": {
+    "pdb_id": "1eyi",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.11"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 546
+  },
+  "611": {
+    "pdb_id": "1ima",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.25"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 577
+  },
+  "873": {
+    "pdb_id": "1inp",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.57"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 856
+  },
+  "916": {
+    "pdb_id": "1qgx",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.3.7"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 904
+  },
+  "599": {
+    "pdb_id": "1gcu",
+    "chain": "A",
+    "ec_numbers": [
+      "1.3.1.24"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 566
+  },
+  "605": {
+    "pdb_id": "1gdh",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.29"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 571
+  },
+  "610": {
+    "pdb_id": "1j49",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.28"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 576
+  },
+  "918": {
+    "pdb_id": "1qib",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.24.24"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 906
+  },
+  "638": {
+    "pdb_id": "1q6x",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.6"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 605
+  },
+  "659": {
+    "pdb_id": "1ndi",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.7"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 629
+  },
+  "645": {
+    "pdb_id": "1sll",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.2.15"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 612
+  },
+  "852": {
+    "pdb_id": "1euu",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.18"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 835
+  },
+  "649": {
+    "pdb_id": "1bg6",
+    "chain": "A",
+    "ec_numbers": [
+      "1.5.1.28"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 617
+  },
+  "712": {
+    "pdb_id": "8pch",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.16"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 682
+  },
+  "956": {
+    "pdb_id": "4xb6",
+    "chain": "D",
+    "ec_numbers": [
+      "4.7.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 949
+  },
+  "963": {
+    "pdb_id": "2p8b",
+    "chain": "A",
+    "ec_numbers": [
+      "5.1.1.-"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 958
+  },
+  "965": {
+    "pdb_id": "2qjj",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 960
+  },
+  "677": {
+    "pdb_id": "1p4r",
+    "chain": "B",
+    "ec_numbers": [
+      "2.1.2.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 646
+  },
+  "720": {
+    "pdb_id": "1ogo",
+    "chain": "X",
+    "ec_numbers": [
+      "3.2.1.11"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 690
+  },
+  "681": {
+    "pdb_id": "1h54",
+    "chain": "A",
+    "ec_numbers": [
+      "2.4.1.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 649
+  },
+  "690": {
+    "pdb_id": "1hdh",
+    "chain": "A",
+    "ec_numbers": [
+      "3.1.6.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 661
+  },
+  "692": {
+    "pdb_id": "1rk2",
+    "chain": "A",
+    "ec_numbers": [
+      "2.7.1.15"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 663
+  },
+  "779": {
+    "pdb_id": "1tz3",
+    "chain": "A",
+    "ec_numbers": [
+      "3.6.1.26"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 751
+  },
+  "718": {
+    "pdb_id": "1roz",
+    "chain": "B",
+    "ec_numbers": [
+      "2.5.1.46"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 687
+  },
+  "766": {
+    "pdb_id": "1x9h",
+    "chain": "B",
+    "ec_numbers": [
+      "5.3.1.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 736
+  },
+  "719": {
+    "pdb_id": "1r6w",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.113"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 689
+  },
+  "954": {
+    "pdb_id": "1m3s",
+    "chain": "A",
+    "ec_numbers": [
+      "5.3.1.27"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 948
+  },
+  "753": {
+    "pdb_id": "2acu",
+    "chain": "A",
+    "ec_numbers": [
+      "1.1.1.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 725
+  },
+  "858": {
+    "pdb_id": "1dqr",
+    "chain": "B",
+    "ec_numbers": [
+      "5.3.1.9"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 842
+  },
+  "774": {
+    "pdb_id": "1qol",
+    "chain": "B",
+    "ec_numbers": [
+      "3.4.22.46"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 746
+  },
+  "811": {
+    "pdb_id": "1nbf",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.19.12"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 789
+  },
+  "951": {
+    "pdb_id": "3c2e",
+    "chain": "A",
+    "ec_numbers": [
+      "2.4.2.19"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 945
+  },
+  "813": {
+    "pdb_id": "1fr2",
+    "chain": "B",
+    "ec_numbers": [
+      "3.1.21.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 791
+  },
+  "854": {
+    "pdb_id": "1znv",
+    "chain": "B",
+    "ec_numbers": [
+      "3.1.-.-"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 838
+  },
+  "835": {
+    "pdb_id": "1pau",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.56"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 815
+  },
+  "838": {
+    "pdb_id": "1qtn",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.22.61"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 818
+  },
+  "932": {
+    "pdb_id": "2ayh",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.73"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 924
+  },
+  "895": {
+    "pdb_id": "1pmi",
+    "chain": "A",
+    "ec_numbers": [
+      "5.3.1.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 880
+  },
+  "887": {
+    "pdb_id": "1or8",
+    "chain": "A",
+    "ec_numbers": [
+      "2.1.1.319"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 872
+  },
+  "891": {
+    "pdb_id": "1p3d",
+    "chain": "A",
+    "ec_numbers": [
+      "6.3.2.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 876
+  },
+  "908": {
+    "pdb_id": "3mdd",
+    "chain": "A",
+    "ec_numbers": [
+      "1.3.8.7"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 893
+  },
+  "909": {
+    "pdb_id": "2npx",
+    "chain": "A",
+    "ec_numbers": [
+      "1.11.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 895
+  },
+  "910": {
+    "pdb_id": "2pec",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.2.2"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 896
+  },
+  "921": {
+    "pdb_id": "1rvv",
+    "chain": "A",
+    "ec_numbers": [
+      "2.5.1.78"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 909
+  },
+  "924": {
+    "pdb_id": "1uas",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.22"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 913
+  },
+  "927": {
+    "pdb_id": "1xgm",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.11.18"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 917
+  },
+  "931": {
+    "pdb_id": "2acy",
+    "chain": "A",
+    "ec_numbers": [
+      "3.6.1.7"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 923
+  },
+  "934": {
+    "pdb_id": "2ebn",
+    "chain": "A",
+    "ec_numbers": [
+      "3.2.1.96"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 926
+  },
+  "942": {
+    "pdb_id": "3cla",
+    "chain": "A",
+    "ec_numbers": [
+      "2.3.1.28"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 934
+  },
+  "947": {
+    "pdb_id": "3gdp",
+    "chain": "B",
+    "ec_numbers": [
+      "4.1.2.10"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 941
+  },
+  "959": {
+    "pdb_id": "2hw4",
+    "chain": "A",
+    "ec_numbers": [
+      "3.9.1.3"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 952
+  },
+  "968": {
+    "pdb_id": "4eay",
+    "chain": "A",
+    "ec_numbers": [
+      "4.2.1.8"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 963
+  },
+  "972": {
+    "pdb_id": "4kxv",
+    "chain": "A",
+    "ec_numbers": [
+      "2.2.1.1"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 219
+  },
+  "923": {
+    "pdb_id": "1tyf",
+    "chain": "A",
+    "ec_numbers": [
+      "3.4.21.92"
+    ],
+    "confidence_tier": 1,
+    "source": "mcsa",
+    "mcsa_id": 912
+  }
+}
