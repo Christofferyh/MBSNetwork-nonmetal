@@ -14,19 +14,31 @@ import numpy as np
 from scipy.stats import gaussian_kde
 
 from config import config
+from network.tier1_threshold import MIN_SEPARATION
 
 COLOR = "#B4D6E3"
 
-# The pooled sparse-tail bin plus nine 0.1-wide bins from 1.1 to 2.0; see
-# network.tier1_threshold for how these overlap values were computed.
+# The pooled sparse-tail bin plus nine 0.1-wide bins from 1.1 to 2.0; the
+# per-bin overlap values and component counts are loaded from
+# network.tier1_threshold's saved multi-seed output (one row per seed). Per
+# bin, seeds with an accepted 2-component fit are plotted as the mean with
+# min-max whiskers (filled marker), labelled with the mean Ashman's D over
+# those seeds -- the variable the threshold rule actually uses; seeds where
+# the bin was found unimodal, and delta is 1.0 by definition rather than
+# fitted, get an open marker.
 RANGES = [
     (0.0, 1.1), (1.1, 1.2), (1.2, 1.3), (1.3, 1.4), (1.4, 1.5),
     (1.5, 1.6), (1.6, 1.7), (1.7, 1.8), (1.8, 1.9), (1.9, 2.0),
 ]
-OVERLAPS = [0.1051, 0.5286, 0.5819, 0.4744, 0.5610, 0.5741, 0.6636, 0.6209, 0.6777, 0.6384]
 
 
-def plot_threshold_derivation(rmsd: np.ndarray, threshold: float = 1.1) -> plt.Figure:
+def plot_threshold_derivation(
+    rmsd: np.ndarray,
+    overlaps_by_seed: np.ndarray,
+    n_components_by_seed: np.ndarray,
+    ashman_d_by_seed: np.ndarray,
+    threshold: float = 1.1,
+) -> plt.Figure:
     plt.rcParams.update({
         "font.family": "sans-serif", "font.size": 11,
         "axes.spines.top": False, "axes.spines.right": False,
@@ -39,12 +51,43 @@ def plot_threshold_derivation(rmsd: np.ndarray, threshold: float = 1.1) -> plt.F
     fig, (axA, axB) = plt.subplots(1, 2, figsize=(9, 4))
 
     x = np.arange(len(RANGES))
-    axA.scatter(x, OVERLAPS, color=COLOR, edgecolor="black", linewidth=0.8, s=60, zorder=3)
+    n_seeds = overlaps_by_seed.shape[0]
+    fitted = n_components_by_seed == 2
+    for i in x:
+        values = overlaps_by_seed[fitted[:, i], i]
+        mean_d = ashman_d_by_seed[fitted[:, i], i].mean() if fitted[:, i].any() else None
+        n_fitted = len(values)
+        mixed = 0 < n_fitted < n_seeds
+        if n_fitted:
+            mean = values.mean()
+            axA.errorbar(
+                i, mean, yerr=[[mean - values.min()], [values.max() - mean]], fmt="none",
+                ecolor="black", elinewidth=0.8, capsize=3, zorder=2,
+            )
+            axA.scatter(i, mean, color=COLOR, edgecolor="black", linewidth=0.8, s=60, zorder=3)
+            # For an unseparated bin with several fitted seeds, also show how
+            # close its worst case came to the separation cut.
+            d_values = ashman_d_by_seed[fitted[:, i], i]
+            label = f"D {mean_d:.2f}"
+            if n_fitted > 1 and d_values.max() <= MIN_SEPARATION:
+                label += f" (max {d_values.max():.2f})"
+            label += f"\n{n_fitted}/{n_seeds}" if mixed else ""
+            axA.text(i + 0.22, mean, label, fontsize=7, va="center")
+        if n_fitted < n_seeds:
+            axA.scatter(i, 1.0, facecolor="white", edgecolor="black", linewidth=1.0, s=60, zorder=3)
+            if mixed:
+                axA.text(i + 0.22, 1.0, f"{n_seeds - n_fitted}/{n_seeds}", fontsize=7, va="center")
+
+    axA.scatter([], [], color=COLOR, edgecolor="black", linewidth=0.8, s=60,
+                label="Two-component fit\n(mean, min–max over seeds)")
+    axA.scatter([], [], facecolor="white", edgecolor="black", linewidth=1.0, s=60,
+                label=r"Unimodal ($\delta$ = 1)")
+    axA.legend(loc="lower right", fontsize=8, frameon=False)
     axA.set_xticks(x)
     axA.set_xticklabels(bin_labels, rotation=90, fontsize=8)
     axA.set_xlabel("RMSD range (Å)")
     axA.set_ylabel(r"$\delta$")
-    axA.set_ylim(0, max(OVERLAPS) * 1.15)
+    axA.set_ylim(0, 1.1)
     axA.text(-0.28, 1.05, "A", transform=axA.transAxes, fontsize=16, fontweight="bold")
 
     kde = gaussian_kde(rmsd)
@@ -65,10 +108,26 @@ def plot_threshold_derivation(rmsd: np.ndarray, threshold: float = 1.1) -> plt.F
 
 
 if __name__ == "__main__":
-    alignments = np.load(config.directory.alignments / "tier1_all_to_all.npy")
+    alignments = np.load(
+        config.directory.alignments / "tier1_all_to_all_redundancy_reduced.npy"
+    )
     rmsd = alignments[:, 2]
+    summary = np.load(
+        config.directory.analysis / "tier1_bimodal_overlap_redundancy_reduced_seeds.npz"
+    )
+    overlaps_by_seed = summary["overlaps"]
+    n_components_by_seed = summary["n_components"]
+    ashman_d_by_seed = summary["ashman_d"]
+    assert overlaps_by_seed.shape[1] == len(RANGES)
+    print(
+        f"{len(rmsd)} pairs; seeds {summary['seeds'].tolist()}; "
+        f"selected thresholds {summary['thresholds'].tolist()}"
+    )
 
-    fig = plot_threshold_derivation(rmsd)
+    fig = plot_threshold_derivation(
+        rmsd, overlaps_by_seed, n_components_by_seed, ashman_d_by_seed
+    )
     out_path = config.directory.figures / "tier1_threshold_derivation.pdf"
     fig.savefig(out_path)
+    fig.savefig(out_path.with_name("tier1_threshold_derivation_preview.png"), dpi=200)
     print(f"Saved {out_path}")
