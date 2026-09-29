@@ -1,15 +1,91 @@
 from __future__ import annotations
 
+from dataclasses import dataclass
+
 import numpy as np
 from alignment.alignment import PairwiseAligner
 from config import AlignmentConfig, config
 from database import Session
 from database.datamodel.models import ActiveSite
 from network.threshold import compute_bimodal_overlap_gmm
+from sklearn.mixture import GaussianMixture  # type: ignore[import-untyped]
 from sqlalchemy import select
 
+# Fixed top-level seeds, one full analysis per seed, so the reported overlaps
+# carry their real run-to-run spread. Each seed drives a single generator that
+# both shuffles the pair sample and draws one seed per re-alignment task, so
+# results don't depend on N_JOBS or how pairs are split across workers.
+SEEDS = (1, 2, 3, 4, 5)
 
-def bimodal_overlap(ranges: list[tuple[float, float]], n_pairs: int) -> np.ndarray:
+# A 2-component fit is only accepted if BIC prefers it over 1 component and
+# each component holds at least this fraction of the bin, so a handful of
+# outliers can't be handed a component of their own.
+MIN_COMPONENT_WEIGHT = 0.05
+
+# Ashman's D above which an accepted 2-component fit counts as two separated
+# populations rather than one skewed or heavy-tailed peak (Ashman, Bird &
+# Zepf 1994, AJ 108:2348). BIC alone also prefers 2 components for peaks that
+# are merely non-Gaussian, e.g. two components with near-identical means.
+MIN_SEPARATION = 2.0
+
+
+@dataclass
+class BinFit:
+    """Mixture-model summary of one RMSD bin's re-aligned values. The
+    2-component parameters are sorted by mean and kept for inspection even
+    when that fit is rejected."""
+
+    n_components: int
+    delta_bic: float  # BIC(2 components) - BIC(1 component); negative favours 2
+    weights: np.ndarray
+    means: np.ndarray
+    sds: np.ndarray
+    ashman_d: float
+    overlap: float  # GMM mode overlap (delta); 1.0 for a unimodal bin
+
+    @property
+    def separated(self) -> bool:
+        return self.n_components == 2 and self.ashman_d > MIN_SEPARATION
+
+
+def fit_bin(rmsd_values: np.ndarray) -> BinFit:
+    x = rmsd_values.reshape(-1, 1)
+    one = GaussianMixture(n_components=1, covariance_type="full", random_state=42).fit(x)
+    # Same fit as compute_bimodal_overlap_gmm, which is reused for delta below.
+    two = GaussianMixture(n_components=2, covariance_type="full", random_state=42).fit(x)
+
+    order = np.argsort(two.means_.ravel())
+    weights = two.weights_[order]
+    means = two.means_.ravel()[order]
+    sds = np.sqrt(two.covariances_.ravel()[order])
+    ashman_d = float(np.sqrt(2) * (means[1] - means[0]) / np.sqrt(sds[0] ** 2 + sds[1] ** 2))
+    delta_bic = float(two.bic(x) - one.bic(x))
+
+    n_components = 2 if delta_bic < 0 and weights.min() >= MIN_COMPONENT_WEIGHT else 1
+    overlap = compute_bimodal_overlap_gmm(rmsd_values) if n_components == 2 else 1.0
+    return BinFit(n_components, delta_bic, weights, means, sds, ashman_d, overlap)
+
+
+def select_threshold(ranges: list[tuple[float, float]], fits: list[BinFit]) -> float | None:
+    """Threshold-selection rule: scanning bins upward from the lowest, the
+    transition is the first bin that is not two separated populations; the
+    threshold is the upper edge of the bin preceding it. None if even the
+    lowest bin isn't separated."""
+    threshold = None
+    for (_, high), fit in zip(ranges, fits):
+        if not fit.separated:
+            break
+        threshold = high
+    return threshold
+
+
+def bimodal_overlap(
+    ranges: list[tuple[float, float]],
+    n_pairs: int,
+    seed: int,
+    alignments_file: str = "tier1_all_to_all.npy",
+    out_file: str = "tier1_bimodal_overlap.npz",
+) -> list[BinFit]:
     """Compute mode overlap between modes of bimodal RMSD distributions for a given
     number of ActiveSite point cloud pairs within specified ranges.
 
@@ -37,7 +113,7 @@ def bimodal_overlap(ranges: list[tuple[float, float]], n_pairs: int) -> np.ndarr
     because they're a genuine similar-active-site match, so they're excluded
     from that range's sample and reported rather than silently counted.
     """
-    alignments_path = config.directory.alignments / "tier1_all_to_all.npy"
+    alignments_path = config.directory.alignments / alignments_file
     alignments = np.load(alignments_path)
 
     # Preload (pdb_id, mcsa_id) for every stored site so candidates for the
@@ -54,12 +130,13 @@ def bimodal_overlap(ranges: list[tuple[float, float]], n_pairs: int) -> np.ndarr
     pooled_low, pooled_high = ranges[0]
     flagged_duplicates: list[tuple[int, int, str, int | None, int | None]] = []
 
-    pairs_by_range: dict[float, list[tuple[int, int]]] = {low: [] for low, _ in ranges}
+    pairs_by_range: dict[float, list[tuple[int, int, float]]] = {low: [] for low, _ in ranges}
     all_site_ids = set()
 
     # Iterate over alignments until we have n_pairs for every range.
+    rng = np.random.default_rng(seed)
     indices = np.arange(len(alignments))
-    np.random.shuffle(indices)
+    rng.shuffle(indices)
 
     for i in indices:
         source_id, target_id, rmsd = alignments[i]
@@ -79,7 +156,7 @@ def bimodal_overlap(ranges: list[tuple[float, float]], n_pairs: int) -> np.ndarr
                     )
                     break
 
-            pairs_by_range[low].append((source_id, target_id))
+            pairs_by_range[low].append((source_id, target_id, rmsd))
             all_site_ids.update([source_id, target_id])
             break
 
@@ -103,36 +180,59 @@ def bimodal_overlap(ranges: list[tuple[float, float]], n_pairs: int) -> np.ndarr
     # range's real pair count explicitly since ranges are not guaranteed to
     # fill to n_pairs (see docstring).
     ordered_pairs = []
+    original_rmsds = []
     range_counts = []
     for low, _ in ranges:
         pairs = pairs_by_range[low]
         range_counts.append(len(pairs))
-        for src_id, tgt_id in pairs:
+        for src_id, tgt_id, rmsd in pairs:
             src_idx = site_id_to_idx[src_id]
             tgt_idx = site_id_to_idx[tgt_id]
             ordered_pairs.append((src_idx, tgt_idx))
+            original_rmsds.append(rmsd)
 
-    alignments = compute_rmsd_distribution(ordered_site_ids, ordered_pairs)
+    # One seed per re-alignment task, drawn from the same seeded generator.
+    pair_seeds = rng.integers(0, 2**32, size=len(ordered_pairs), dtype=np.uint32).tolist()
+    alignments = compute_rmsd_distribution(ordered_site_ids, ordered_pairs, pair_seeds)
 
-    # Compute GMM overlap per range, slicing by each range's real count
-    # rather than assuming every range filled to n_pairs.
-    mode_overlaps = np.zeros(len(ranges))
+    # Fit each range, slicing by its real count rather than assuming every
+    # range filled to n_pairs.
+    fits = []
     start = 0
-    for i, count in enumerate(range_counts):
+    for count in range_counts:
         end = start + count
-        rmsd_values = alignments[start:end, 2]
-        mode_overlaps[i] = compute_bimodal_overlap_gmm(rmsd_values)
+        fits.append(fit_bin(alignments[start:end, 2]))
         start = end
 
-    path = config.directory.analysis / "tier1_bimodal_overlap.npy"
-    with path.open("wb") as f:
-        np.save(f, mode_overlaps)
+    for (low, high), count, fit in zip(ranges, range_counts, fits):
+        print(
+            f"  ({low}, {high}): {count} pairs, {fit.n_components} component(s), "
+            f"dBIC {fit.delta_bic:+.1f}, min weight {fit.weights.min():.3f}, "
+            f"D {fit.ashman_d:.2f}, overlap {fit.overlap:.4f}, separated {fit.separated}"
+        )
 
-    return mode_overlaps
+    np.savez(
+        config.directory.analysis / out_file,
+        source_id=alignments[:, 0],
+        target_id=alignments[:, 1],
+        original_rmsd=np.array(original_rmsds),
+        realigned_rmsd=alignments[:, 2],
+        bin_index=np.repeat(np.arange(len(ranges)), range_counts),
+        overlaps=np.array([f.overlap for f in fits]),
+        n_components=np.array([f.n_components for f in fits]),
+        delta_bic=np.array([f.delta_bic for f in fits]),
+        weights=np.array([f.weights for f in fits]),
+        means=np.array([f.means for f in fits]),
+        sds=np.array([f.sds for f in fits]),
+        ashman_d=np.array([f.ashman_d for f in fits]),
+        separated=np.array([f.separated for f in fits]),
+    )
+
+    return fits
 
 
 def compute_rmsd_distribution(
-    site_ids: list[int], pairs: list[tuple[int, int]]
+    site_ids: list[int], pairs: list[tuple[int, int]], pair_seeds: list[int]
 ) -> np.ndarray:
     """Calculate RMSD distributions for pairs of ActiveSite point clouds."""
     with Session() as session:
@@ -150,7 +250,9 @@ def compute_rmsd_distribution(
     # a worker (see network.tier1_network.build_tier1_network).
     site_dict = {site.id: site for site in sites}
     sorted_sites = [site_dict[site_id] for site_id in site_ids]
-    aligner = PairwiseAligner(sorted_sites, AlignmentConfig(), pair_indices=pairs)
+    aligner = PairwiseAligner(
+        sorted_sites, AlignmentConfig(), pair_indices=pairs, pair_seeds=pair_seeds
+    )
     alignments = aligner.align()
 
     return alignments
@@ -170,4 +272,28 @@ if __name__ == "__main__":
         (1.9, 2.0),
     ]
     n_pairs = 1000
-    gmm_overlap_areas = bimodal_overlap(ranges, n_pairs)
+    per_seed = []
+    thresholds = []
+    for seed in SEEDS:
+        print(f"Seed {seed}:")
+        fits = bimodal_overlap(
+            ranges,
+            n_pairs,
+            seed,
+            alignments_file="tier1_all_to_all_redundancy_reduced.npy",
+            out_file=f"tier1_bimodal_overlap_redundancy_reduced_seed{seed}.npz",
+        )
+        per_seed.append(fits)
+        thresholds.append(select_threshold(ranges, fits))
+        print(f"  selected threshold: {thresholds[-1]}")
+
+    # Stacked (n_seeds, n_ranges) summary, read by network.tier1_threshold_figure.
+    np.savez(
+        config.directory.analysis / "tier1_bimodal_overlap_redundancy_reduced_seeds.npz",
+        seeds=np.array(SEEDS),
+        overlaps=np.array([[f.overlap for f in fits] for fits in per_seed]),
+        n_components=np.array([[f.n_components for f in fits] for fits in per_seed]),
+        ashman_d=np.array([[f.ashman_d for f in fits] for fits in per_seed]),
+        separated=np.array([[f.separated for f in fits] for fits in per_seed]),
+        thresholds=np.array([np.nan if t is None else t for t in thresholds]),
+    )
