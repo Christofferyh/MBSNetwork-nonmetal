@@ -1,25 +1,21 @@
-"""Component-size distribution figure for the Tier 1 network at threshold
-1.1: every connected component's size, sorted descending, log-scale y-axis
+"""Component-size distribution figure for the final Tier 1 network
+(redundancy-reduced, topology-guided recovery applied, threshold 1.1):
+every connected component's size, sorted descending, log-scale y-axis
 given how skewed this is (one giant component, then a long thin tail).
 
-Only covers the 334 nodes that actually appear in the built graph -- the
-remaining sites with zero edges at that threshold are never added as
-nodes at all (build_network() only adds edge endpoints), so they aren't
-represented here as size-1 components; see the module docstring context
-in tier1_network.py for that distinction.
+Only covers nodes that actually appear in the built graph -- sites with
+zero edges at that threshold are never added as nodes at all
+(build_network() only adds edge endpoints), so they aren't represented
+here as size-1 components; see tier1_network.py for that distinction.
 """
 
 from __future__ import annotations
 
 import matplotlib.pyplot as plt
 import networkx as nx
-import numpy as np
-from sqlalchemy import select
 
 from config import config
-from database import Session
-from database.datamodel.models import ActiveSite
-from network.tier1_network import build_tier1_network
+from network.network import read_network_json
 
 COLOR = "#B4D6E3"
 
@@ -32,7 +28,7 @@ def plot_component_sizes(sizes: list[int]) -> plt.Figure:
     })
 
     fig, ax = plt.subplots(figsize=(8, 4.5))
-    ax.bar(range(1, len(sizes) + 1), sizes, color=COLOR, edgecolor="black", linewidth=0.8, width=0.8)
+    ax.scatter(range(1, len(sizes) + 1), sizes, color=COLOR, edgecolor="black", linewidth=0.8, s=60, zorder=3)
     ax.set_yscale("log")
     ax.set_xlabel("Component rank (descending size)")
     ax.set_ylabel("Component size (log scale)")
@@ -42,11 +38,8 @@ def plot_component_sizes(sizes: list[int]) -> plt.Figure:
 
 
 if __name__ == "__main__":
-    with Session() as session:
-        all_sites = session.execute(select(ActiveSite)).scalars().all()
-
-    alignments = np.load(config.directory.alignments / "tier1_all_to_all.npy")
-    network, _ = build_tier1_network(all_sites, alignments=alignments, threshold=1.1)
+    network = read_network_json("Tier1NetworkRecovered")
+    print(f"Network: {network.number_of_nodes()} nodes, {network.number_of_edges()} edges")
 
     components = sorted(nx.connected_components(network), key=len, reverse=True)
     sizes = [len(c) for c in components]
@@ -57,4 +50,5 @@ if __name__ == "__main__":
     fig = plot_component_sizes(sizes)
     out_path = config.directory.figures / "tier1_component_size_distribution.pdf"
     fig.savefig(out_path)
+    fig.savefig(out_path.with_name("tier1_component_size_distribution_preview.png"), dpi=200)
     print(f"Saved {out_path}")
