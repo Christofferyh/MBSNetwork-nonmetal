@@ -100,11 +100,17 @@ class PairwiseAligner:
         config: AlignmentConfig,
         root_logger: logging.Logger | None = None,
         pair_indices: list[tuple[int, int]] | None = None,
+        pair_seeds: list[int] | None = None,
     ):
+        if pair_seeds is not None and (
+            pair_indices is None or len(pair_seeds) != len(pair_indices)
+        ):
+            raise ValueError("pair_seeds needs pair_indices of the same length.")
         self.mbss = mbss
         self.config = config
         self.root_logger = root_logger
         self.pair_indices = pair_indices
+        self.pair_seeds = pair_seeds
 
     def save_alignment(self, alignment_rmsds: np.ndarray):
         assert self.config.path is not None
@@ -170,6 +176,11 @@ class PairwiseAligner:
         else:
             # Split pair indices into sublists for each worker
             pair_indices_split = split_into_sublists(self.pair_indices, workers)
+            pair_seeds_split = (
+                split_into_sublists(self.pair_seeds, workers)
+                if self.pair_seeds is not None
+                else [None] * len(pair_indices_split)
+            )
 
             if len(pair_indices_split) != workers:
                 raise ValueError("Number of workers must match the number of sublists.")
@@ -185,8 +196,11 @@ class PairwiseAligner:
                     sub_pair_indices,
                     log_queue=queue,
                     log_level=log_level,
+                    pair_seeds=sub_pair_seeds,
                 )
-                for worker, sub_pair_indices in zip(range(workers), pair_indices_split)
+                for worker, sub_pair_indices, sub_pair_seeds in zip(
+                    range(workers), pair_indices_split, pair_seeds_split
+                )
             )
             all_alignments = np.vstack(job_alignment_rmsds)
 
@@ -286,16 +300,25 @@ def pairwise_alignment(
     pair_indices: list[tuple[int, int]] | None = None,
     log_queue: Queue | None = None,
     log_level: int | None = None,
+    pair_seeds: list[int] | None = None,
 ):
-    """Perform all-to-all pairwise ICP alignments of the MBSs."""
+    """Perform all-to-all pairwise ICP alignments of the MBSs.
+
+    If `pair_seeds` is given (one per entry of `pair_indices`), each pair is
+    aligned from freshly built point clouds under its own numpy seed, so its
+    result doesn't depend on which worker runs it or what ran before it.
+    """
     # Set up worker logger
     if log_queue is not None:
         worker_logger = configure_worker_logger(log_queue, log_level)
     else:
         worker_logger = None
 
-    # Instantiated here as Open3d objects are not serializable
-    point_clouds = [MBSPointCloud.from_mbs(mbs) for mbs in mbss]
+    # Instantiated here as Open3d objects are not serializable. With per-pair
+    # seeds, clouds are instead built per pair, after seeding (see below).
+    point_clouds = (
+        [MBSPointCloud.from_mbs(mbs) for mbs in mbss] if pair_seeds is None else []
+    )
 
     # Set up the ICP registration parameters
     loss_function = get_loss_function(config)
@@ -351,8 +374,13 @@ def pairwise_alignment(
             )
             start_time = time.time()
 
-        source = point_clouds[i]
-        target = point_clouds[j]
+        if pair_seeds is None:
+            source = point_clouds[i]
+            target = point_clouds[j]
+        else:
+            np.random.seed(pair_seeds[counter])
+            source = MBSPointCloud.from_mbs(mbss[i])
+            target = MBSPointCloud.from_mbs(mbss[j])
         final_rmsd = align_point_clouds(source, target, config)
         alignment_rmsds[rmsd_idx, :] = [source.db_id, target.db_id, final_rmsd]
         rmsd_idx += 1
